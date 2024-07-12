@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Interfaz Básica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Diseño Web Avanzado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ejercicio1.html">Ejercicio 1</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ejercicio2.html">Ejercicio 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ejercicio3.html">Ejercicio 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ejercicio4.html">Ejercicio 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Interfaz Básica</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo electrónico:</label>
+                                <input type="email" class="form-control" id="correo" name="correo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="url" class="form-label">URL:</label>
+                                <input type="url" class="form-control" id="url" name="url" placeholder="Escribir la URL del trabajo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="fecha" class="form-label">Fecha:</label>
+                                <input type="date" class="form-control" id="fecha" name="fecha">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tiempo" class="form-label">Tiempo:</label>
+                                <input type="time" class="form-control" id="tiempo" name="tiempo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="fechaHora" class="form-label">Fecha y hora:</label>
+                                <input type="datetime-local" class="form-control" id="fechaHora" name="fechaHora">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mes" class="form-label">Mes:</label>
+                                <input type="month" class="form-control" id="mes" name="mes">
+                            </div>
+                            <div class="mb-3">
+                                <label for="semana" class="form-label">Semana:</label>
+                                <input type="week" class="form-control" id="semana" name="semana">
+                            </div>
+                            <div class="mb-3">
+                                <label for="numero" class="form-label">Número (min: 10, max: 10):</label>
+                                <input type="number" class="form-control" id="numero" name="numero" min="10" max="10">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono:</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="busqueda" class="form-label">Término de búsqueda:</label>
+                                <input type="search" class="form-control" id="busqueda" name="busqueda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="color" class="form-label">Color favorito:</label>
+                                <input type="color" class="form-control form-control-color" id="color" name="color">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
